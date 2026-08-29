@@ -1,0 +1,45 @@
+{
+    "name": "italix/routing",
+    "description": "Named routes and URL generation: declare a route once, link to it by name, and fail loudly at generation time instead of 404ing later",
+    "type": "library",
+    "license": "MPL-2.0",
+    "version": "2.0.0",
+    "keywords": [
+        "routing",
+        "url-generation",
+        "named-routes",
+        "fastroute"
+    ],
+    "homepage": "https://github.com/italix-net/routing",
+    "authors": [
+        {
+            "name": "Italix",
+            "email": "info@italix.net"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "suggest": {
+        "nikic/fast-route": "The dispatcher these patterns are written for; this library only parses the syntax"
+    },
+    "require-dev": {
+        "italix/testing": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Italix\\Routing\\": ""
+        },
+        "files": [
+            "functions.php"
+        ]
+    },
+    "scripts": {
+        "test": [
+            "php tests/PatternTest.php",
+            "php tests/UrlGeneratorTest.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
